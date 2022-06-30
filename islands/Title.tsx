@@ -2,6 +2,7 @@
 
 import { h, Fragment } from "preact";
 import { useCallback } from "preact/hooks";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 import { tw } from "@twind";
 
@@ -20,12 +21,14 @@ export default function Title() {
   return (
     <Fragment>
       <div class={tw`absolute h-screen min-w-full dark:bg-gray-900`} />
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={particleOptions}
-        className={tw`absolute h-screen min-w-full`}
-      />
+      {IS_BROWSER && (
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          options={particleOptions}
+          className={tw`absolute h-screen min-w-full`}
+        />
+      )}
       <div class={tw`relative flex items-center justify-center h-screen`}>
         <div
           class={tw`py-4 text-center text-gray-700 duration-150 bg-white rounded-lg shadow-lg w-80 md:w-auto md:p-10 md:m-auto backdrop-filter backdrop-blur-sm dark:text-gray-300 hover:shadow-2xl hover:backdrop-blur-md bg-opacity-10`}
