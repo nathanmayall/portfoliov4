@@ -4,7 +4,7 @@ import { h } from "preact";
 import ProjectCard from "./projects/ProjectCard.tsx";
 import projects from "./projects/index.tsx";
 
-export default function Links() {
+const Links = () => {
   return (
     <div className="flex mb-4 flex-wrap items-center justify-center h-full p-3 align-middle lg:space-x-8 md:place-content-around">
       {projects.map((project) => (
@@ -12,4 +12,6 @@ export default function Links() {
       ))}
     </div>
   );
-}
+};
+
+export default Links;

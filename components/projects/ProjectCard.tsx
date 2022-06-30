@@ -1,10 +1,18 @@
 /** @jsx h */
-import { h } from "preact";
+import { h, FunctionComponent } from "preact";
 import { tw } from "@twind";
 
-const ProjectCard = ({ project }) => {
-  const { name, description, image } = project;
+interface ProjectCardProps {
+  id: number;
+  name: string;
+  description: string;
+  image: string;
+  url?: string;
+}
 
+const ProjectCard: FunctionComponent<{ project: ProjectCardProps }> = ({
+  project: { name, description, image },
+}) => {
   return (
     <div
       class={tw`h-full flex justify-center items-center flex-col m-4 p-4 text-center text-gray-700 duration-150 bg-white bg-opacity-10 rounded-lg backdrop-filter backdrop-blur-sm hover:backdrop-blur-md dark:text-gray-300`}

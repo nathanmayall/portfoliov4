@@ -6,20 +6,14 @@ export default {
     opacity: 0,
   },
   fpsLimit: 60,
-  interactivity: {
-    detectsOn: "canvas",
-    events: {
-      resize: true,
-    },
-  },
   particles: {
     color: {
       value: ["#73EEDC", "#73C2BE", "#776885", "#5F1A37", "#04030F"],
     },
     move: {
       enable: true,
-      outMode: "bounce",
-      random: true,
+      outMode: "bounce" as const,
+      random: false,
       speed: 2,
     },
     opacity: {

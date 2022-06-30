@@ -1,19 +1,21 @@
 /** @jsx h */
 
 import { h, Fragment } from "preact";
+import { useCallback } from "preact/hooks";
 
 import { tw } from "@twind";
 
 import { loadFull } from "tsparticles";
 import Particles from "preact-particles";
 import particleOptions from "../components/particleOptions.tsx";
+import type { Engine } from "tsparticles-engine";
 
 import Icons from "../components/Icons.tsx";
 
 export default function Title() {
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
 
   return (
     <Fragment>

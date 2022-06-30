@@ -15,7 +15,7 @@ const projects = [
     image: "/sites/GameUnder.png",
   },
   {
-    id: 3,
+    id: 2,
     name: "AbSocial Chat",
     description: "A real time chat website built on Bootstrap and GraphQL.",
     url: "https://absocial.me",
