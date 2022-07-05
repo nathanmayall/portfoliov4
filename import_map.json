@@ -7,6 +7,7 @@
     "@twind": "./utils/twind.ts",
     "twind": "https://esm.sh/twind@0.16.17",
     "twind/": "https://esm.sh/twind@0.16.17/",
-    "vanta/": "https://esm.sh/vanta@0.5.22/"
+    "vanta/": "https://esm.sh/vanta@0.5.22/",
+    "three": "https://esm.sh/three@0.124.0"
   }
 }

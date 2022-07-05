@@ -1,7 +1,9 @@
 /** @jsx h */
 import { h, Fragment } from "preact";
 
+import ContactBox from "../components/ContactBox.tsx";
 import Title from "../islands/Title.tsx";
+
 import Body from "../components/Body.tsx";
 import Footer from "../components/Footer.tsx";
 
