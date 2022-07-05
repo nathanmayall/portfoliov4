@@ -8,11 +8,13 @@ import Footer from "../components/Footer.tsx";
 export default function Home() {
   return (
     <Fragment>
-      <title>Nathan {"Mayall's"} Portfolio. Hi!</title>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-      />
+      <head>
+        <title>Nathan {"Mayall's"} Portfolio. Hi!</title>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        />
+      </head>
       <Title />
       <Body />
       <Footer />

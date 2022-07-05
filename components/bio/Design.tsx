@@ -4,9 +4,11 @@ import { tw } from "@twind";
 
 export default function Design() {
   return (
-    <div class="p-8 duration-150 bg-white rounded-lg shadow-lg bg-opacity-90 w-96 backdrop-filter backdrop-blur-sm hover:backdrop-blur-md">
-      <h2 class="text-2xl text-shadow-sm">Design</h2>
-      <div class="flex justify-between mx-4 my-3 text-6xl">
+    <div
+      class={tw`p-8 duration-150 bg-white rounded-lg shadow-lg bg-opacity-40 w-96 backdrop-filter backdrop-blur-sm hover:backdrop-blur-md`}
+    >
+      <h2 class={tw`text-2xl text-shadow-sm`}>Design</h2>
+      <div class={tw`flex justify-between mx-4 my-3 text-6xl`}>
         <i class="devicon-html5-plain-wordmark colored" />
         <i class="devicon-tailwindcss-plain colored" />
         <div class={tw`hover:animate-spin`}>
