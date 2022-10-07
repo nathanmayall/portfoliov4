@@ -16,11 +16,6 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
         <meta
           name="theme-color"
           content="#297373"
@@ -28,7 +23,7 @@ export default function Home() {
         />
         <meta
           name="theme-color"
-          content="#297373"
+          content="#000000"
           media="(prefers-color-scheme: dark)"
         />
       </head>
