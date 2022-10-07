@@ -21,6 +21,16 @@ export default function Home() {
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
+        <meta
+          name="theme-color"
+          content="#297373"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#297373"
+          media="(prefers-color-scheme: dark)"
+        />
       </head>
       <Title />
       <Body />
