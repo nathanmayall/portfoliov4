@@ -1,9 +1,7 @@
 /** @jsx h */
 import { h, Fragment } from "preact";
 
-import ContactBox from "../components/ContactBox.tsx";
 import Title from "../islands/Title.tsx";
-
 import Body from "../components/Body.tsx";
 import Footer from "../components/Footer.tsx";
 
@@ -23,7 +21,7 @@ export default function Home() {
         />
         <meta
           name="theme-color"
-          content="#000000"
+          content="#0A3050"
           media="(prefers-color-scheme: dark)"
         />
       </head>
