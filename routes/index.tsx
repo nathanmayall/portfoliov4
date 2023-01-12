@@ -14,6 +14,7 @@ export default function Home() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
+        <style>{`body {background-color: #297373;}`}</style>
         <meta
           name="theme-color"
           content="#297373"
