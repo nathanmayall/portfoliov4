@@ -17,8 +17,7 @@ export default function Body() {
         <div class={tw`text-center text-gray-700 dark:text-gray-300`}>
           <h1 class={tw`mb-2 text-6xl text-shadow-md`}>My Expertise</h1>
           <p class={tw`px-2 mb-3`}>
-            I&apos;m a Full Stack Junior Developer, Graduated Manchester Codes
-            in September 2021. This is a collection of my work so far.
+            I&apos;m a Software Engineer. This is a collection of my work so far.
           </p>
         </div>
         <div
