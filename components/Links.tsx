@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-
 import ProjectCard from "./projects/ProjectCard.tsx";
 import projects from "./projects/index.tsx";
 

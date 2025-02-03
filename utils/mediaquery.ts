@@ -5,10 +5,13 @@ export const useMediaQuery = (
   whenTrue: string | number,
   whenFalse: string | number
 ) => {
-  if (typeof window === "undefined" || typeof window.matchMedia === "undefined")
+  if (
+    typeof globalThis === "undefined" ||
+    typeof globalThis.matchMedia === "undefined"
+  )
     return whenFalse;
 
-  const mediaQuery = window.matchMedia(query);
+  const mediaQuery = globalThis.matchMedia(query);
   const [match, setMatch] = useState(!!mediaQuery.matches);
 
   useEffect(() => {

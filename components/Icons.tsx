@@ -1,18 +1,13 @@
-/** @jsx h */
-
-import { h } from "preact";
-import { tw } from "@twind";
-
 export default function Icons() {
   return (
-    <div class={tw`flex justify-center mt-6 space-x-6`}>
+    <div class="flex justify-center mt-6 space-x-6">
       <a
         href="https://www.linkedin.com/in/nathan-mayall-1a09a279"
         target="_blank"
         rel="noopener noreferrer"
       >
         <div
-          class={tw`text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300`}
+          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
         >
           <i class="devicon-linkedin-plain" />
         </div>
@@ -23,7 +18,7 @@ export default function Icons() {
         rel="noopener noreferrer"
       >
         <div
-          class={tw`text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300`}
+          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
         >
           <i class="devicon-slack-plain" />
         </div>
@@ -34,7 +29,7 @@ export default function Icons() {
         rel="noopener noreferrer"
       >
         <div
-          class={tw`text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300`}
+          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
         >
           <i class="devicon-github-original" />
         </div>
