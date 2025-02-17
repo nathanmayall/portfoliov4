@@ -1,4 +1,4 @@
-import Title from "../islands/Title.tsx";
+import Title from "../components/Title.tsx";
 import Body from "../components/Body.tsx";
 import Footer from "../components/Footer.tsx";
 

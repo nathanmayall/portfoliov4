@@ -1,7 +1,9 @@
-import { Options } from "$fresh/plugins/twind.ts";
+import { type Config } from "tailwindcss";
 
 export default {
-  selfURL: import.meta.url,
+  content: [
+    "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
+  ],
   darkMode: "media",
   theme: {
     extend: {
@@ -12,4 +14,4 @@ export default {
       },
     },
   },
-} as Options;
+} satisfies Config;
