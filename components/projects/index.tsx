@@ -4,7 +4,7 @@ const projects = [
     name: "Postitt",
     description: "A reddit clone made using Typescript, NextJS, and TypeORM.",
     url: "https://postitt.io",
-    image: "/sites/postitt.png",
+    image: "/sites/postitt",
   },
   {
     id: 1,
@@ -12,14 +12,14 @@ const projects = [
     description:
       "A games comparison site made using NextJS and Google Firebase.",
     url: "https://gameunder.store",
-    image: "/sites/GameUnder.png",
+    image: "/sites/GameUnder",
   },
   {
     id: 2,
     name: "AbSocial Chat",
     description: "A real time chat website built on Bootstrap and GraphQL.",
     url: "https://absocial.me",
-    image: "/sites/absocial.png",
+    image: "/sites/absocial",
   },
 ];
 

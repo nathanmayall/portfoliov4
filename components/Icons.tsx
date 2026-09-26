@@ -6,9 +6,7 @@ export default function Icons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div
-          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
-        >
+        <div class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300">
           <i class="devicon-linkedin-plain" />
         </div>
       </a>
@@ -17,9 +15,7 @@ export default function Icons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div
-          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
-        >
+        <div class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300">
           <i class="devicon-slack-plain" />
         </div>
       </a>
@@ -28,9 +24,7 @@ export default function Icons() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div
-          class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300"
-        >
+        <div class="text-6xl duration-150 hover:text-indigo-900 dark:hover:text-indigo-300">
           <i class="devicon-github-original" />
         </div>
       </a>

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-Skobeloff: #297373;
+}
+
+@utility bg-bio-image {
+  background-image: image-set(
+    url("./img/paintsplash.avif") type("image/avif"),
+    url("./img/paintsplash.webp") type("image/webp")
+  );
+}
+
+@utility bg-dark-bio-image {
+  background-image: image-set(
+    url("./img/diver.avif") type("image/avif"),
+    url("./img/diver.webp") type("image/webp")
+  );
+}
+
+@utility bg-texture {
+  background-image: image-set(
+    url("./img/cartographer.avif") type("image/avif"),
+    url("./img/cartographer.webp") type("image/webp")
+  );
+}
+
+body {
+  background-color: var(--color-Skobeloff);
+}

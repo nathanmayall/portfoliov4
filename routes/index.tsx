@@ -1,8 +1,9 @@
 import Title from "../components/Title.tsx";
 import Body from "../components/Body.tsx";
 import Footer from "../components/Footer.tsx";
+import { define } from "../utils.ts";
 
-export default function Home() {
+export default define.page(function Home() {
   return (
     <>
       <Title />
@@ -10,4 +11,4 @@ export default function Home() {
       <Footer />
     </>
   );
-}
+});
