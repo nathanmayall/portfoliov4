@@ -28,7 +28,7 @@ export interface ModelContext {
 const text = (value: unknown, isError = false): ToolResult => ({
   content: [{
     type: "text",
-    text: typeof value === "string" ? value : JSON.stringify(value, null, 2),
+    text: typeof value === "string" ? value : JSON.stringify(value),
   }],
   isError,
 });
