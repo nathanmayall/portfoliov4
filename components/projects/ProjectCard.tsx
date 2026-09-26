@@ -1,5 +1,5 @@
-import type { FunctionComponent } from "preact";
 import { asset } from "fresh/runtime";
+import type { FunctionComponent } from "preact";
 
 interface ProjectCardProps {
   id: number;

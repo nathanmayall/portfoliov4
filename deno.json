@@ -9,15 +9,10 @@
   },
   "lint": {
     "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "tags": ["fresh", "recommended"]
     }
   },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "exclude": ["**/_fresh/*"],
   "imports": {
     "@/": "./",
     "fresh": "jsr:@fresh/core@^2.3.3",
@@ -30,12 +25,7 @@
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.3"
   },
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.asynciterable",
-      "dom.iterable",
-      "deno.ns"
-    ],
+    "lib": ["dom", "dom.asynciterable", "dom.iterable", "deno.ns"],
     "jsx": "precompile",
     "jsxImportSource": "preact",
     "jsxPrecompileSkipElements": [
@@ -54,9 +44,7 @@
       "noscript",
       "template"
     ],
-    "types": [
-      "vite/client"
-    ]
+    "types": ["vite/client"]
   },
   "deploy": {
     "org": "nathanmayall",

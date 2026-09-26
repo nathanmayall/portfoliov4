@@ -1,5 +1,5 @@
-import ProjectCard from "./projects/ProjectCard.tsx";
 import projects from "./projects/index.tsx";
+import ProjectCard from "./projects/ProjectCard.tsx";
 
 const Links = () => {
   return (

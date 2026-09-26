@@ -12,7 +12,7 @@ export default define.page(function ErrorPage({ error }) {
         <title>{title}</title>
       </Head>
       <div class="px-4 py-8 mx-auto h-screen bg-[#86efac]">
-        <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+        <div class="max-w-3xl mx-auto flex flex-col items-center justify-center">
           <img
             class="my-6"
             src="/logo.svg"
@@ -26,7 +26,9 @@ export default define.page(function ErrorPage({ error }) {
               ? "The page you were looking for doesn't exist."
               : "Please try again later."}
           </p>
-          <a href="/" class="underline">Go back home</a>
+          <a href="/" class="underline">
+            Go back home
+          </a>
         </div>
       </div>
     </>
