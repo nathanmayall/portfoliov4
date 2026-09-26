@@ -23,7 +23,7 @@ const ProjectCard: FunctionComponent<{ project: ProjectCardProps }> = ({
   const lightboxId = `screenshot-${id}`;
 
   return (
-    <div class="relative h-full flex justify-center items-center flex-col m-4 p-4 text-center text-gray-700 glass rounded-2xl dark:text-gray-300">
+    <div class="relative h-full flex justify-center items-center flex-col p-4 text-center text-gray-700 glass rounded-2xl dark:text-gray-300">
       {repo && (
         <a
           href={repo}

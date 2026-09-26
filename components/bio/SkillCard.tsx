@@ -14,7 +14,7 @@ export default function SkillCard(
           <div
             key={icon.name}
             class={[
-              "size-16",
+              "size-12 sm:size-16",
               icon.class,
               icon.spin && "hover:animate-spin",
             ].filter(Boolean).join(" ")}

@@ -74,6 +74,6 @@ body {
 
 /* Tints a glass card with a touch of the site's Skobeloff teal. */
 @utility glass-tint {
-  --glass-rgb: 223 234 234;
+  --glass-rgb: 202 220 220;
   --glass-dark-rgb: 94 180 180;
 }
