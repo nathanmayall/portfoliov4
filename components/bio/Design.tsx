@@ -1,3 +1,6 @@
+import { asset } from "fresh/runtime";
+import { devicon } from "../devicon.ts";
+
 export default function Design() {
   return (
     <div class="p-6 duration-150 bg-white/40 rounded-lg shadow-lg w-96 backdrop-blur-xs hover:backdrop-blur-md">
@@ -5,21 +8,26 @@ export default function Design() {
       <div class="flex justify-between mx-4 my-3 text-6xl">
         <img
           class="w-16 h-16"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/html5/html5-original-wordmark.svg"
+          src={devicon("html5", "original-wordmark")}
           alt="HTML5 logo"
         />
         <img
           class="w-16 h-16 bg-white rounded-full p-1"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/tailwindcss/tailwindcss-original.svg"
+          src={devicon("tailwindcss")}
           alt="Tailwind CSS logo"
         />
         <div class="hover:animate-spin">
           <img
             class="w-16 h-16"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/react/react-original.svg"
+            src={devicon("react")}
             alt="React logo"
           />
         </div>
+        <img
+          class="w-16 h-16"
+          src={asset("/logo.svg")}
+          alt="Fresh logo"
+        />
       </div>
       <p>
         Using Material Design, TailwindCSS and other component bootstraps,{" "}

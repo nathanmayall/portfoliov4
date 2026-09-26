@@ -1,3 +1,4 @@
+import DevClient from "../islands/DevClient.tsx";
 import { define } from "../utils.ts";
 
 export default define.page(function App({ Component }) {
@@ -20,6 +21,7 @@ export default define.page(function App({ Component }) {
       </head>
       <body>
         <Component />
+        {import.meta.env.DEV && <DevClient />}
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import { devicon } from "../devicon.ts";
+
 export default function Languages() {
   return (
     <div class="p-6 duration-150 bg-white/40 rounded-lg shadow-lg w-96 backdrop-blur-xs hover:backdrop-blur-md">
@@ -5,18 +7,23 @@ export default function Languages() {
       <div class="flex justify-between mx-4 my-3 text-6xl content-center">
         <img
           class="w-16 h-16 bg-white rounded-full p-1"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/go/go-original-wordmark.svg"
+          src={devicon("go", "original-wordmark")}
           alt="Go logo"
         />
         <img
           class="w-16 h-16"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/rust/rust-original.svg"
+          src={devicon("rust")}
           alt="Rust logo"
         />
         <img
           class="w-16 h-16"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@2.17.0/icons/typescript/typescript-original.svg"
+          src={devicon("typescript")}
           alt="TypeScript logo"
+        />
+        <img
+          class="w-16 h-16"
+          src={devicon("bash")}
+          alt="Bash logo"
         />
       </div>
       <p>
