@@ -4,7 +4,7 @@ import { define } from "../utils.ts";
 
 export default define.page(function ErrorPage({ error }) {
   const notFound = error instanceof HttpError && error.status === 404;
-  const title = notFound ? "404 - Page not found" : "Something went wrong";
+  const title = notFound ? "404 – Page not found" : "Something went wrong";
 
   return (
     <>

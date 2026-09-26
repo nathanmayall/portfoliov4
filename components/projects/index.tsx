@@ -2,23 +2,24 @@ const projects = [
   {
     id: 0,
     name: "Postitt",
-    description: "A reddit clone made using Typescript, NextJS, and TypeORM.",
-    url: "https://postitt.io",
+    description:
+      "A Reddit clone built with TypeScript, Next.js and TypeORM, with a React Native app alongside.",
+    repo: "https://github.com/Postitt-io",
     image: "/sites/postitt",
   },
   {
     id: 1,
     name: "GameUnder",
     description:
-      "A games comparison site made using NextJS and Google Firebase.",
-    url: "https://gameunder.store",
+      "A video game price comparison site built with Next.js and Firebase.",
+    repo: "https://github.com/nathanmayall/game-under",
     image: "/sites/GameUnder",
   },
   {
     id: 2,
     name: "AbSocial Chat",
-    description: "A real time chat website built on Bootstrap and GraphQL.",
-    url: "https://absocial.me",
+    description: "A real-time chat site built with Bootstrap and GraphQL.",
+    repo: "https://github.com/nathanmayall/AbSocial",
     image: "/sites/absocial",
   },
 ];

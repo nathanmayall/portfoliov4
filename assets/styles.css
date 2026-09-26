@@ -28,3 +28,52 @@
 body {
   background-color: var(--color-Skobeloff);
 }
+
+/* Frosted glass for the cards: a diagonal sheen, a stronger blur, a thin rim
+   with a bright top edge, and a soft drop shadow. Dark mode tones it down. */
+@utility glass {
+  background-image: linear-gradient(
+    135deg,
+    rgb(var(--glass-rgb, 255 255 255) / 0.4),
+    rgb(var(--glass-rgb, 255 255 255) / 0.1)
+  );
+  border: 1px solid rgb(255 255 255 / 0.4);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.6),
+    0 8px 32px rgb(0 0 0 / 0.15);
+  backdrop-filter: blur(16px) saturate(160%);
+  transition:
+    backdrop-filter 150ms,
+    box-shadow 150ms;
+
+  &:hover {
+    backdrop-filter: blur(24px) saturate(180%);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.6),
+      0 12px 40px rgb(0 0 0 / 0.2);
+  }
+
+  @variant dark {
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--glass-dark-rgb, 255 255 255) / 0.12),
+      rgb(var(--glass-dark-rgb, 255 255 255) / 0.03)
+    );
+    border-color: rgb(255 255 255 / 0.15);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.15),
+      0 8px 32px rgb(0 0 0 / 0.35);
+
+    &:hover {
+      box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 0.15),
+        0 12px 40px rgb(0 0 0 / 0.45);
+    }
+  }
+}
+
+/* Tints a glass card with a touch of the site's Skobeloff teal. */
+@utility glass-tint {
+  --glass-rgb: 223 234 234;
+  --glass-dark-rgb: 94 180 180;
+}

@@ -28,5 +28,8 @@ jobs:
       - name: Format, lint and type check
         run: deno task check
 
+      - name: Test
+        run: deno task test
+
       - name: Build
         run: deno task build

@@ -1,4 +1,5 @@
 import { devicon } from "./devicon.ts";
+import { profile } from "./profile.ts";
 
 // Devicon has no email icon, so this is Bootstrap Icons' envelope-fill (MIT),
 // drawn to match the GitHub logo.
@@ -12,20 +13,7 @@ export default function Icons() {
   return (
     <div class="flex justify-center mt-6 space-x-6">
       <a
-        href="https://www.linkedin.com/in/nathan-mayall-1a09a279"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          class={iconClass}
-          src={devicon("linkedin")}
-          width={64}
-          height={64}
-          alt="LinkedIn"
-        />
-      </a>
-      <a
-        href="mailto:nathanmayall@icloud.com?subject=I've seen your portfolio and..."
+        href={`mailto:${profile.email}?subject=I've seen your portfolio and...`}
         aria-label="Email"
       >
         <svg
@@ -38,7 +26,20 @@ export default function Icons() {
         </svg>
       </a>
       <a
-        href="https://github.com/nathanmayall"
+        href={profile.links.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class={iconClass}
+          src={devicon("linkedin")}
+          width={64}
+          height={64}
+          alt="LinkedIn"
+        />
+      </a>
+      <a
+        href={profile.links.github}
         target="_blank"
         rel="noopener noreferrer"
       >
